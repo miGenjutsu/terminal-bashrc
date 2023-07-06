@@ -179,16 +179,11 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # # oh-my-posh cmd beautify
 eval "$(oh-my-posh init bash --config '/mnt/c/github/prompt/beautifyterminalkushal.omp.json')"
-# eval "$(oh-my-posh init bash --profile '\\\\wsl$\\Ubuntu-20.04\\home\\migenjutsu\\github\\prompt\\beautifyterminalkusha.omp.json')"
-# eval "$(oh-my-posh init bash --config "\\wsl.localhost\\Ubuntu-20.04\\home\\migenjutsu\\github\\prompt\beautifyterminalkusha.omp.json")"
 # eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/atomic.omp.json)"
 # eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/marcduiker.omp.json)"
 # eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/kushal.omp.json)"
 # eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/night-owl.omp.json)"
 
-# cmd beautify - icons-in-terminal  **-----** WIP
-# source ~/.local/share/icons-in-terminal/icons_bash.sh
-# DATA=/home/migenjutsu/.local/share/icons-in-terminal/
 
 # RBENV COMMANDS
 eval "$(~/.rbenv/bin/rbenv init - bash)"

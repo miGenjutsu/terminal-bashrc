@@ -33,11 +33,14 @@ alias gaa='git add --all'
 alias gc='git commit'
 
 # Commit changes to the code message.
-alias gcm='git commit'
+alias gcm='git commit -m'
 
 
 # Push Commit
 alias gph="git push"
+
+# Git Push Origin
+alias gpho='git push origin'
 
 # View the Git log.
 alias gl='git log --oneline'

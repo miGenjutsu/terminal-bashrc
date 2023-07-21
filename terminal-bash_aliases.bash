@@ -32,20 +32,45 @@ alias gaa='git add --all'
 # Commit changes to the code.
 alias gc='git commit'
 
+# Commit changes to the code message.
+alias gcm='git commit'
+
+
 # Push Commit
-alias gp="git push"
+alias gph="git push"
 
 # View the Git log.
 alias gl='git log --oneline'
 
 # Create a new Git branch and move to the new branch at the same time. 
-alias gb='git checkout -b'
+alias gcob='git checkout -b'
 
 # Git Checkout - PreExisiting Branch
 alias gco='git checkout'
 
 # View the difference.
 alias gd='git diff'
+
+# Git Restore
+alias grstr='git restore'
+
+# Git Reset
+alias grst='git reset'
+
+# Git Remove
+alias grm='git rm'
+
+# Git Move
+alias gmv='git mv'
+
+#Git Stash
+alias gsth='git stash'
+
+# Git Tag
+alias gtg='git tag'
+
+# Git Pull
+alias gpl='git pull'
 
 
 # Useful Commands

@@ -132,17 +132,39 @@ function git_init() {
         git init
         touch README.md .gitignore LICENSE
         echo "# $(basename "$PWD")" >> README.md
-
-        # Set GitHub origin
-        read -p "Enter your GitHub repository URL: " github_url
-        git remote add origin "$github_url"
-
-        printf "\n%s\n" "Git repository initialized with GitHub origin: $github_url"
-
-        # Open VS Code-Insiders
         code-insiders .
+
+        # Set GitHub origin with SSH URL
+        read -p "Enter your GitHub repository name (e.g., 'username/repo'): " github_repo
+        git remote add origin "git@github.com:$github_repo.git"
+
+        printf "\n%s\n" "Git repository initialized with GitHub origin: git@github.com:$github_repo.git"
     fi
 }
+
+
+#--- THIS IS OLD FUNCTION -- FOR SOME REASON I WAS GETTING AN ERROR SO THE ABOVE SHOULD PREVENT THAT ERROR
+# function git_init() {
+#     if [ -z "$1" ]; then
+#         printf "%s\n" "Please provide a directory name."
+#     else
+#         mkdir "$1"
+#         builtin cd "$1"
+#         pwd
+#         git init
+#         touch README.md .gitignore LICENSE
+#         echo "# $(basename "$PWD")" >> README.md
+
+#         # Set GitHub origin
+#         read -p "Enter your GitHub repository URL: " github_url
+#         git remote add origin "$github_url"
+
+#         printf "\n%s\n" "Git repository initialized with GitHub origin: $github_url"
+
+#         # Open VS Code-Insiders
+#         code-insiders .
+#     fi
+# }
 
 # Weather Report
 # function weather_report() {
